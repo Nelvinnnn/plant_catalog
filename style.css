@@ -1,0 +1,21 @@
+td {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #77bdbd;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  body {
+    background-color: rgb(46, 92, 107);
+  }

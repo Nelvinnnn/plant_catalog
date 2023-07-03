@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG/BB1.jpg">
+    <head>
+        <title>ALAMAT NG SAGING</title>
+    </head>
+    <body>
+        <h2>Plant Catalog</h2>
+        <button type = "button" onclick="loadXMLDoc()">Load plants</button>
+        <p id ="demo"></p>
+    </body>
+
+    <form>
+        <label for="cmn">Common:</label><br>
+        <input type="text" id="cmn" name="cmn" value=" "><br>
+        <label for="btc">Botanical:</label><br>
+        <input type="text" id="btc" name="btc" value=" "><br>
+        <label for="zn">Zone:</label><br>
+        <input type="text" id="zn" name="zn" value=" "><br>
+        <label for="light">Light:</label><br>
+        <input type="text" id="light" name="light" value=" "><br>
+        <label for="prc">Price:</label><br>
+        <input type="text" id="prc" name="prc" value=" "><br>
+        <label for="avail">Availability:</label><br>
+        <input type="text" id="avail" name="avail" value=" "><br><br>
+        <button type="submit">Save</button>
+    </form>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="content">
+                            <div class="toolbar">
+                                <!--Here you can write extra buttons/actions for the toolbar-->
+                            </div>
+                            <table id="bootstrap-table" class="table" style="width: 100%">
+                                <thead>
+                                    <th data-field="id" class="text-center">COMMON</th>
+                                    <th data-field="name" data-sortable="true">BOTANICAL</th>
+                                    <th data-field="salary" data-sortable="true">ZONE</th>
+                                    <th data-field="country" data-sortable="true">LIGHT</th>
+                                    <th data-field="country" data-sortable="true">PRICE</th>
+                                    <th data-field="country" data-sortable="true">AVAILABILITY</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Bloodroot</td>
+                                    <td>Sangunaria canadensis</td>
+                                    <td>4</td>
+                                    <td>Mostly Shady</td>
+                                    <td>$2.44</td>
+                                    <td>031599</td>
+                                </tr>
+                                <tr>
+                                    <td>Columbine</td>
+                                    <td>Aquilegia canadensis</td>
+                                    <td>3</td>
+                                    <td>Mostly Shady</td>
+                                    <td>$9.37</td>
+                                    <td>030699</td>
+                                </tr>
+                                <tr>
+                                    <td>Marsh Marigold</td>
+                                    <td>Caltha Palustris</td>
+                                    <td>4</td>
+                                    <td>Mostly Shady</td>
+                                    <td>$6.81</td>
+                                    <td>051799</td>
+                                </tr>                                
+                                <tr>
+                                    <td>Cowslip</td>
+                                    <td>Caltha Palustris</td>
+                                    <td></td>
+                                    <td>Mostly Shady</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Bloodroot</td>
+                                    <td>Sangunaria canandensis</td>
+                                    <td>4</td>
+                                    <td>Mostly Shady</td>
+                                    <td>$2.44</td>
+                                    <td>031599</td>
+                                </tr>
+                                <tr>
+                                    <td>Bloodroot</td>
+                                    <td>Sangunaria canandensis</td>
+                                    <td>4</td>
+                                    <td>Mostly Shady</td>
+                                    <td>$2.44</td>
+                                    <td>031599</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--  end card  -->
+                </div> <!-- end col-md-12 -->
+            </div> <!-- end row -->
+        </div>
+    </div>
+</html>
