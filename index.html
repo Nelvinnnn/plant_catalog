@@ -6,100 +6,62 @@
         <title>ALAMAT NG SAGING</title>
     </head>
     <body>
-        <h2>Plant Catalog</h2>
-        <button type = "button" onclick="loadXMLDoc()">Load plants</button>
-        <p id ="demo"></p>
+        <h2 class="h2">INFECTED MUSHROOMS</h2>
     </body>
 
-    <form>
-        <label for="cmn">Common:</label><br>
-        <input type="text" id="cmn" name="cmn" value=" "><br>
-        <label for="btc">Botanical:</label><br>
-        <input type="text" id="btc" name="btc" value=" "><br>
-        <label for="zn">Zone:</label><br>
-        <input type="text" id="zn" name="zn" value=" "><br>
-        <label for="light">Light:</label><br>
-        <input type="text" id="light" name="light" value=" "><br>
-        <label for="prc">Price:</label><br>
-        <input type="text" id="prc" name="prc" value=" "><br>
-        <label for="avail">Availability:</label><br>
-        <input type="text" id="avail" name="avail" value=" "><br><br>
-        <button type="submit">Save</button>
-    </form>
 
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="content">
-                            <div class="toolbar">
-                                <!--Here you can write extra buttons/actions for the toolbar-->
-                            </div>
-                            <table id="bootstrap-table" class="table" style="width: 100%">
-                                <thead>
-                                    <th data-field="id" class="text-center">COMMON</th>
-                                    <th data-field="name" data-sortable="true">BOTANICAL</th>
-                                    <th data-field="salary" data-sortable="true">ZONE</th>
-                                    <th data-field="country" data-sortable="true">LIGHT</th>
-                                    <th data-field="country" data-sortable="true">PRICE</th>
-                                    <th data-field="country" data-sortable="true">AVAILABILITY</th>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Bloodroot</td>
-                                    <td>Sangunaria canadensis</td>
-                                    <td>4</td>
-                                    <td>Mostly Shady</td>
-                                    <td>$2.44</td>
-                                    <td>031599</td>
-                                </tr>
-                                <tr>
-                                    <td>Columbine</td>
-                                    <td>Aquilegia canadensis</td>
-                                    <td>3</td>
-                                    <td>Mostly Shady</td>
-                                    <td>$9.37</td>
-                                    <td>030699</td>
-                                </tr>
-                                <tr>
-                                    <td>Marsh Marigold</td>
-                                    <td>Caltha Palustris</td>
-                                    <td>4</td>
-                                    <td>Mostly Shady</td>
-                                    <td>$6.81</td>
-                                    <td>051799</td>
-                                </tr>                                
-                                <tr>
-                                    <td>Cowslip</td>
-                                    <td>Caltha Palustris</td>
-                                    <td></td>
-                                    <td>Mostly Shady</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Bloodroot</td>
-                                    <td>Sangunaria canandensis</td>
-                                    <td>4</td>
-                                    <td>Mostly Shady</td>
-                                    <td>$2.44</td>
-                                    <td>031599</td>
-                                </tr>
-                                <tr>
-                                    <td>Bloodroot</td>
-                                    <td>Sangunaria canandensis</td>
-                                    <td>4</td>
-                                    <td>Mostly Shady</td>
-                                    <td>$2.44</td>
-                                    <td>031599</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div><!--  end card  -->
-                </div> <!-- end col-md-12 -->
-            </div> <!-- end row -->
+    <body>
+        <div>
+            <center>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Common:</th>
+                            <td><input type="text" name="cmn" id="cmn"></td>
+                        </tr>
+                    
+                    <tbody>
+                        <tr>
+                            <th>Botanical:</th>
+                            <td><input type="text" name="btncl" id="btncl"></td>
+                        </tr>
+                        <tr>
+                            <th>Zone:</th>
+                            <td><input type="text" name="zone" id="zone"></td>
+                        </tr>
+                        <tr>
+                            <th>Light:</th>
+                            <td><input type="text" name="lt" id="lt"></td>
+                        </tr>
+                        <tr>
+                            <th>Price:</th>
+                            <td><input type="text" name="prc" id="prc"></td>
+                        </tr>
+                        <tr>
+                            <th>Availability:</th>
+                            <td><input type="text" name="avail" id="avail"></td>
+                        </tr>
+                        <tr id="btna">
+                            <td colspan="2"><input type="button" name="button" id="btn" value="Save" onclick="AddRow()"></td>
+                        </tr>
+                    </tbody>
+                </thead>
+                </table>
+        
+                <table border="2" id="show">
+                    <thead>
+                        <tr>
+                            <th>COMMON</th>
+                            <th>BOTANICAL</th>
+                            <th>ZONE</th>
+                            <th>LIGHT</th>
+                            <th>PRICE</th>
+                            <th>AVAILABILITY</th>
+                        </tr>
+                    </thead>
+                </table>
+            </center>
         </div>
-    </div>
-</html>
+        
+    </body>
+    </html>
